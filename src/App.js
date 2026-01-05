@@ -140,7 +140,12 @@ export default function App() {
   {
     /* // Images (make sure these are in public/) */
   }
-  const images = ["/pic1.jpg", "/pic2.jpg", "/pic3.jpg"];
+  const images = [
+  `${process.env.PUBLIC_URL}/pic1.jpg`,
+  `${process.env.PUBLIC_URL}/pic2.jpg`,
+  `${process.env.PUBLIC_URL}/pic3.jpg`,
+];
+
 
   {
     /* // Inline styles */
