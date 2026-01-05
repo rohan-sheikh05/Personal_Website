@@ -226,7 +226,7 @@ export default function App() {
         <div className="md:w-1/3 flex justify-center md:justify-end">
           <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-gradient-to-tr from-blue-400 via-purple-500 to-pink-500 shadow-2xl">
             <img
-              src="/Profile.jpg" // <-- Your uploaded image
+              src="/public/Profile.jpg" // <-- Your uploaded image
               alt="Rohan Sheikh"
               className="w-full h-full object-cover"
             />
