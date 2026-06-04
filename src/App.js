@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import {
   Mail,
+  GraduationCap,
   Linkedin,
   BookOpen,
   Microscope,
@@ -317,7 +318,7 @@ export default function App() {
                 {" "}
                 Outside of these pursuits, I enjoy content creation—sharing
                 insights on research, innovation, and engineering life on
-                platforms like LinkedIn and YouTube. This helps me connect with
+                platforms like  and YouTube. This helps me connect with
                 l ike-minded individuals while building a community centered
                 around knowledge-sharing and inspiration.
               </p>
@@ -456,7 +457,7 @@ export default function App() {
             </h3>
             <p className="text-gray-300">
               Learned C++, Arduino projects, Adobe Illustrator, video editing,
-              and graphic design. Published content on LinkedIn with 500+ strong
+              and graphic design. Published content on  with 500+ strong
               connections and grew a professional Facebook profile to 1.3k
               followers.
             </p>
@@ -570,12 +571,25 @@ export default function App() {
               rohansheikh2005@gmail.com
             </a>
           </div>
-          {/* LinkedIn */}
+          {/* Linkedin */}
           <div className="flex flex-col items-center bg-gray-800 rounded-xl p-6 shadow-lg hover:scale-105 transition transform">
             <Linkedin size={28} className="text-blue-400 mb-2" />
             <span className="font-medium">LinkedIn</span>
             <a
               href="https://www.linkedin.com/in/rohan-sheikh/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-blue-300 hover:underline mt-1"
+            >
+              Rohan Sheikh
+            </a>
+          </div>
+          {/* Google Scholar */}
+          <div className="flex flex-col items-center bg-gray-800 rounded-xl p-6 shadow-lg hover:scale-105 transition transform">
+            <GraduationCap size={28} className="text-blue-400 mb-2" />
+            <span className="font-medium">Google Scholar</span>
+            <a
+              href="https://scholar.google.com/citations?user=ctab0L4AAAAJ&hl=en"
               target="_blank"
               rel="noreferrer"
               className="text-blue-300 hover:underline mt-1"
