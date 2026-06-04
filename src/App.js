@@ -48,6 +48,9 @@ function Navbar() {
         <a href="#achievements" className="hover:text-amber-400 transition">
           Achievements
         </a>
+        <a href="#certificates" className="hover:text-green-400 transition">
+          Certificates
+        </a>
         <a href="#projects" className="hover:text-yellow-400 transition">
           Projects
         </a>
@@ -101,6 +104,13 @@ function Navbar() {
                 className="hover:text-purple-400 transition"
               >
                 Achievements
+              </a>
+              <a
+                href="#certificates"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-green-400 transition"
+              >
+                Certificates
               </a>
               <a
                 href="#projects"
@@ -474,6 +484,12 @@ export default function App() {
             </p>
           </div>
         </div>
+      </section>
+      {/* ----------------CERTIFICATES------------------*/}
+      <section id="certificates" className="px-6 py-20 max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold mb-12 border-l-4 border-green-500 pl-4">
+          Certificates
+        </h2>
       </section>
 
       {/* ------------------ PROJECTS ------------------ */}
