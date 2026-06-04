@@ -607,7 +607,7 @@ export default function App() {
               rel="noreferrer"
               className="text-blue-300 hover:underline mt-1"
             >
-              Rohan Sheikh
+              MD Rohan Sheikh
             </a>
           </div>
 
