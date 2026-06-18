@@ -155,6 +155,20 @@ export default function App() {
   `${process.env.PUBLIC_URL}/pic1.jpg`,
   `${process.env.PUBLIC_URL}/pic2.jpg`,
   `${process.env.PUBLIC_URL}/pic3.jpg`,
+  `${process.env.PUBLIC_URL}/pic4.jpg`,
+  `${process.env.PUBLIC_URL}/pic5.jpg`,
+  `${process.env.PUBLIC_URL}/pic6.jpg`, 
+  `${process.env.PUBLIC_URL}/pic7.jpg`,
+  `${process.env.PUBLIC_URL}/pic8.jpg`,
+  `${process.env.PUBLIC_URL}/pic9.jpg`,
+  `${process.env.PUBLIC_URL}/pic10.jpg`,
+  `${process.env.PUBLIC_URL}/pic11.jpg`,
+  `${process.env.PUBLIC_URL}/pic12.jpg`,
+  `${process.env.PUBLIC_URL}/pic13.jpg`,
+  `${process.env.PUBLIC_URL}/pic14.jpg`,
+  `${process.env.PUBLIC_URL}/pic15.jpg`,
+  `${process.env.PUBLIC_URL}/pic16.jpg`,
+  `${process.env.PUBLIC_URL}/pic17.jpg`,
 ];
 
 
