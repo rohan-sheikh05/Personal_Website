@@ -173,7 +173,7 @@ export default function App() {
 
   const certificates = [
     {
-      src: `${process.env.PUBLIC_URL}/certificates/cert1.jpg`,
+      src: `${process.env.PUBLIC_URL}/certificates/cert1.png`,
       title: "Intra-BUET Robo Challenge(LFR segment)"
     },
   ];
