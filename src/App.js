@@ -176,6 +176,10 @@ export default function App() {
       src: `${process.env.PUBLIC_URL}/certificates/cert1.png`,
       title: "Intra-BUET Robo Challenge(LFR segment)"
     },
+    {
+      src: `${process.env.PUBLIC_URL}/certificates/cert2.png`,
+      title: "CADQUEST 3.0 by BUET Automoblie Club"
+    },
   ];
 
 
