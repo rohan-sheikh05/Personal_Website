@@ -152,24 +152,31 @@ export default function App() {
     /* // Images (make sure these are in public/) */
   }
   const images = [
-  `${process.env.PUBLIC_URL}/pic1.jpg`,
-  `${process.env.PUBLIC_URL}/pic2.jpeg`,
-  `${process.env.PUBLIC_URL}/pic3.jpeg`,
-  `${process.env.PUBLIC_URL}/pic4.jpeg`,
-  `${process.env.PUBLIC_URL}/pic5.jpeg`,
-  `${process.env.PUBLIC_URL}/pic6.jpeg`, 
-  `${process.env.PUBLIC_URL}/pic7.jpeg`,
-  `${process.env.PUBLIC_URL}/pic8.jpeg`,
-  `${process.env.PUBLIC_URL}/pic9.jpeg`,
-  `${process.env.PUBLIC_URL}/pic10.jpeg`,
-  `${process.env.PUBLIC_URL}/pic11.jpeg`,
-  `${process.env.PUBLIC_URL}/pic12.jpeg`,
-  `${process.env.PUBLIC_URL}/pic13.jpeg`,
-  `${process.env.PUBLIC_URL}/pic14.jpeg`,
-  `${process.env.PUBLIC_URL}/pic15.jpeg`,
-  `${process.env.PUBLIC_URL}/pic16.jpeg`,
-  `${process.env.PUBLIC_URL}/pic17.jpeg`,
-];
+    `${process.env.PUBLIC_URL}/pic1.jpg`,
+    `${process.env.PUBLIC_URL}/pic2.jpeg`,
+    `${process.env.PUBLIC_URL}/pic3.jpeg`,
+    `${process.env.PUBLIC_URL}/pic4.jpeg`,
+    `${process.env.PUBLIC_URL}/pic5.jpeg`,
+    `${process.env.PUBLIC_URL}/pic6.jpeg`,
+    `${process.env.PUBLIC_URL}/pic7.jpeg`,
+    `${process.env.PUBLIC_URL}/pic8.jpeg`,
+    `${process.env.PUBLIC_URL}/pic9.jpeg`,
+    `${process.env.PUBLIC_URL}/pic10.jpeg`,
+    `${process.env.PUBLIC_URL}/pic11.jpeg`,
+    `${process.env.PUBLIC_URL}/pic12.jpeg`,
+    `${process.env.PUBLIC_URL}/pic13.jpeg`,
+    `${process.env.PUBLIC_URL}/pic14.jpeg`,
+    `${process.env.PUBLIC_URL}/pic15.jpeg`,
+    `${process.env.PUBLIC_URL}/pic16.jpeg`,
+    `${process.env.PUBLIC_URL}/pic17.jpeg`,
+  ];
+
+  const certificates = [
+    {
+      src: `${process.env.PUBLIC_URL}/certificates/cert1.jpg`,
+      title: "Intra-BUET Robo Challenge(LFR segment)"
+    },
+  ];
 
 
   {
@@ -186,7 +193,7 @@ export default function App() {
 
   const sliderImgStyle = {
     width: "100%",
-    height: "380px",
+    height: "400px",
     objectFit: "cover",
     borderRadius: "12px",
     boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
@@ -504,6 +511,22 @@ export default function App() {
         <h2 className="text-4xl font-bold mb-12 border-l-4 border-green-500 pl-4">
           Certificates
         </h2>
+        <div className="slider-container" style={{ width: "80%", margin: "0 auto" }}>
+          <Slider {...settings}>
+            {certificates.map((cert, index) => (
+              <div key={index} style={{ textAlign: "center", padding: "10px" }}>
+                <img
+                  src={cert.src}
+                  alt={cert.title}
+                  style={{ width: "100%", maxHeight: "400px", objectFit: "contain", borderRadius: "8px" }}
+                />
+                <h3 style={{ marginTop: "15px", color: "#333", fontSize: "1.1rem", fontWeight: "600" }}>
+                  {cert.title}
+                </h3>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </section>
 
       {/* ------------------ PROJECTS ------------------ */}
