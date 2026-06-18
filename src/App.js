@@ -185,7 +185,7 @@ export default function App() {
       title: "Faith and Fitness Run 5KM Marathon"
     },
     {
-      src: `${process.env.PUBLIC_URL}/certificates/cert4.png`,
+      src: `${process.env.PUBLIC_URL}/certificates/cert4.jpg`,
       title: "SciBlitz 1.0 by IEEE CUET Student Branch"
     },
     {
@@ -193,31 +193,31 @@ export default function App() {
       title: "CAPITELIZER '25 By BUP Bussiness Society"
     },
     {
-      src: `${process.env.PUBLIC_URL}/certificates/cert6.png`,
+      src: `${process.env.PUBLIC_URL}/certificates/cert6.jpg`,
       title: "ROBO Carnival 2026 by BUET Robotics Society"
     },
     {
-      src: `${process.env.PUBLIC_URL}/certificates/cert7.png`,
+      src: `${process.env.PUBLIC_URL}/certificates/cert7.jpeg`,
       title: "MIST Robolution 2025 - Perticipation"
     },
     {
-      src: `${process.env.PUBLIC_URL}/certificates/cert8.png`,
+      src: `${process.env.PUBLIC_URL}/certificates/cert8.jpg`,
       title: "MIST Robolution 2025 - 2nd Runners UP"
     },
     {
-      src: `${process.env.PUBLIC_URL}/certificates/cert9.png`,
+      src: `${process.env.PUBLIC_URL}/certificates/cert9.jpg`,
       title: "Vitalizers 3.0 by BRAC BEF - Semifinalist"
     },
     {
-      src: `${process.env.PUBLIC_URL}/certificates/cert10.png`,
+      src: `${process.env.PUBLIC_URL}/certificates/cert10.jpg`,
       title: "TEDXBUET 2025 - Event Co-ordinator"
     },
     {
-      src: `${process.env.PUBLIC_URL}/certificates/cert11.png`,
+      src: `${process.env.PUBLIC_URL}/certificates/cert11.jpg`,
       title: "BEAR Summit 2025"
     },
     {
-      src: `${process.env.PUBLIC_URL}/certificates/cert12.png`,
+      src: `${process.env.PUBLIC_URL}/certificates/cert12.jpg`,
       title: "CaseSpecs 3.0 by KUET Spectrum"
     },
   ];
