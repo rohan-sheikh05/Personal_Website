@@ -244,7 +244,7 @@ export default function App() {
   };
 
   const textStyle = {
-    maxWidth: "700px",
+    maxWidth: "1000px",
     textAlign: "center",
   };
 
