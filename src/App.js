@@ -518,15 +518,33 @@ export default function App() {
         <div className="slider-container" style={{ width: "80%", margin: "0 auto" }}>
           <Slider {...settings}>
             {certificates.map((cert, index) => (
-              <div key={index} style={{ textAlign: "center", padding: "10px" }}>
-                <img
-                  src={cert.src}
-                  alt={cert.title}
-                  style={{ width: "100%", maxHeight: "400px", objectFit: "contain", borderRadius: "8px" }}
-                />
-                <h3 style={{ marginTop: "15px", color: "#333", fontSize: "1.1rem", fontWeight: "600" }}>
-                  {cert.title}
-                </h3>
+              <div key={index} style={{ position: "relative", padding: "10px", textAlign: "center" }}>
+                {/* Image Container */}
+                <div style={{ position: "relative", display: "inline-block", width: "100%" }}>
+                  <img
+                    src={cert.src}
+                    alt={cert.title}
+                    style={{ width: "100%", maxHeight: "500px", objectFit: "contain", borderRadius: "8px" }}
+                  />
+                  {/* Overlay Title in the Upper-Left Corner */}
+                  <div style={{
+                    position: "absolute",
+                    top: "15px",
+                    left: "15px",
+                    backgroundColor: "rgba(0, 0, 0, 0.75)",
+                    color: "#ffffff",
+                    padding: "6px 14px",
+                    borderRadius: "6px",
+                    fontSize: "0.95rem",
+                    fontWeight: "600",
+                    pointerEvents: "none",
+                    boxShadow: "0 4px 6px rgba(0,0,0,0.3)",
+                    maxWidth: "80%",
+                    textAlign: "left"
+                  }}>
+                    {cert.title}
+                  </div>
+                </div>
               </div>
             ))}
           </Slider>
