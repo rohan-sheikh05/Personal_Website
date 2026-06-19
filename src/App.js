@@ -426,11 +426,11 @@ export default function App() {
               color: "#9b53e2",
               fontSize: "20px",
             }}>Robotics & Embedded Systems</p>
-              Micro Controllers
-              Sensors
-              Actuators
-              Electronics
-              Automation
+              Micro Controllers,
+              Sensors,
+              Actuators,
+              Electronics,
+              Automation,
               IoT Prototyping
             </span>
           </div>
@@ -447,10 +447,10 @@ export default function App() {
               color: "#fad960",
               fontSize: "20px",
             }}>Research & Technical Writing</p>
-              Academic Writing
-              Literature Review
-              Scientific Presentations
-              3MT
+              Academic Writing,
+              Literature Review,
+              Scientific Presentations,
+              3MT,
               Reference Management
             </span>
           </div>
@@ -461,8 +461,8 @@ export default function App() {
               color: "#f43487",
               fontSize: "20px",
             }}>Materials Engineering</p>
-              Metallography
-              Materials Characterization
+              Metallography,
+              Materials Characterization,
               Biomaterials
             </span>
           </div>
@@ -474,10 +474,10 @@ export default function App() {
               color: "#42749b",
               fontSize: "20px",
             }}>Design & Content Creation</p>
-              Adobe Illustrator
-              Canva
-              Video Editing
-              Brand Identity
+              Adobe Illustrator,
+              Canva,
+              Video Editing,
+              Brand Identity,
               Presentation Design
             </span>
           </div>
@@ -493,10 +493,10 @@ export default function App() {
               color: "#ff8120",
               fontSize: "20px",
             }}>Entrepreneurship</p>
-              Business Development
-              Startup Ideation
-              Case Analysis
-              Pitch Decks
+              Business Development,
+              Startup Ideation,
+              Case Analysis,
+              Pitch Decks,
               Market Validation
             </span>
           </div>
@@ -507,10 +507,10 @@ export default function App() {
               color: "#28eee8",
               fontSize: "20px",
             }}>Leadership</p>
-              Event Coordination
-              Team Management
-              Public Speaking
-              Project Planning
+              Event Coordination,
+              Team Management,
+              Public Speaking,
+              Project Planning,
               Community Building
             </span>
           </div>
