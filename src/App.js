@@ -406,8 +406,8 @@ export default function App() {
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-blue-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <Code size={32} className="text-blue-400" />
             <span><p style={{
-              color: #60a5fa,
-              font-size: 16px,
+              color: "#60a5fa",
+              font-size: "16px",
             }}>Programming & Software Development</p>
 
               C
