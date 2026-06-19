@@ -405,7 +405,7 @@ export default function App() {
           {/* Technical Skills */}
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-blue-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <Code size={32} className="text-blue-400" />
-            <span>Programming & Software Development
+            <span><p>Programming & Software Development</p>
 
               C
               C++
@@ -419,7 +419,16 @@ export default function App() {
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <Cpu size={32} className="text-purple-400" />
-            <span>Arduino & IoT Projects</span>
+            <span><p>Robotics & Embedded Systems</p>
+              Micro Controllers
+              Sensors
+              Actuators
+              Electronics
+              Automation
+
+
+              IoT Prototyping
+            </span>
           </div>
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-green-500/30 transition transform hover:-translate-y-2 hover:scale-105">
@@ -430,33 +439,61 @@ export default function App() {
           {/* Research & Engineering */}
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-yellow-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <BookOpen size={32} className="text-yellow-400" />
-            <span>Research Writing & Literature Review</span>
+            <span><p>Research & Technical Writing</p>
+              Academic Writing
+              Literature Review
+              Scientific Presentations
+              3MT
+              Reference Management
+            </span>
           </div>
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-pink-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <Microscope size={32} className="text-pink-400" />
-            <span>Materials Analysis & Metallography</span>
+            <span><p>Materials Engineering</p>
+              Metallography
+              Materials Characterization
+              Biomaterials
+            </span>
           </div>
 
           {/* Creative & Business */}
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-indigo-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <Palette size={32} className="text-indigo-400" />
-            <span>Adobe Illustrator & Design</span>
+            <span><p>Design & Content Creation</p>
+              Adobe Illustrator
+              Canva
+              Video Editing
+              Brand Identity
+              Presentation Design
+            </span>
           </div>
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-red-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <Film size={32} className="text-red-400" />
-            <span>Video Editing & Graphics Designing</span>
+            <span><p>CAD and PCB Design</p></span>
           </div>
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-orange-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <Briefcase size={32} className="text-orange-400" />
-            <span>Entrepreneurship & Business Development</span>
+            <span><p>Entrepreneurship</p>
+              Business Development
+              Startup Ideation
+              Case Analysis
+              Pitch Decks
+              Market Validation
+            </span>
           </div>
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-teal-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <Users size={32} className="text-teal-400" />
-            <span>Leadership & Event Management</span>
+            <span><p>Leadership</p>
+              Event Coordination
+              Team Management
+              Public Speaking
+              Project Planning
+              Community Building
+            </span>
           </div>
         </div>
       </section>
