@@ -406,7 +406,16 @@ export default function App() {
           {/* Technical Skills */}
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-blue-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <Code size={32} className="text-blue-400" />
-            <span>C , C++, Python Programming</span>
+            <span>Programming & Software Development
+
+              C
+              C++
+              Python
+              HTML
+              CSS
+              JavaScript
+              React
+              Git</span>
           </div>
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition transform hover:-translate-y-2 hover:scale-105">
