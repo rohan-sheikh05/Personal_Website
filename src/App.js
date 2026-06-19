@@ -527,12 +527,12 @@ export default function App() {
           {/* Card */}
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-pink-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <h3 className="text-xl font-semibold text-pink-400 mb-2">
-              Case Competitions
+              National Recognition
             </h3>
             <p className="text-gray-300">
-              Participated in Capitalizer’25 (Certificate), BUP Business
-              Society, EDC, Orange Corners Ideation Challenge 5.0, and 3MT by
-              IEEE CUET.
+              • 3rd Place – Robolution 2025
+              • 2nd Place – DRMC Science Festival
+              • Multiple national robotics competitions
             </p>
           </div>
 
@@ -541,10 +541,10 @@ export default function App() {
               Research
             </h3>
             <p className="text-gray-300">
-              Wrote my first literature review (selected by professor), joined a
-              PhD project with Environment Watch BUET, completed a two-week
-              exclusive research training, and opened a ResearchGate account
-              (gaining international recommendations).
+              • Literature Review on Biomaterials
+              • IEEE CUET & IEOM BUET 3MT
+              • Research Symposium Presenter
+              • Research Team Member
             </p>
           </div>
 
@@ -564,31 +564,46 @@ export default function App() {
               Entrepreneurship
             </h3>
             <p className="text-gray-300">
-              Founded Spark Lifestyle (e-commerce), started a T-shirt business
-              with profit, opened Learn Islam channel, and launched RAN Academy.
+              • Founder – Spark Lifestyle
+              • Co-founder – RoboTronics
+              • Founder – RAN Academy
+              • Startup & Ideation Competitions
             </p>
           </div>
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-pink-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <h3 className="text-xl font-semibold text-pink-400 mb-2">
-              Skills & Creativity
+              Ledership
             </h3>
             <p className="text-gray-300">
-              Learned C++, Arduino projects, Adobe Illustrator, video editing,
-              and graphic design. Published content on  with 500+ strong
-              connections and grew a professional Facebook profile to 1.3k
-              followers.
+              • Executive Member of multiple BUET clubs
+              • Event Coordinator – TEDx BUET
+              • Department CR & TR
+              • Organizer of departmental festivals
             </p>
           </div>
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-pink-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <h3 className="text-xl font-semibold text-pink-400 mb-2">
-              Teaching & Mentorship
+              Competitive Excellence
             </h3>
             <p className="text-gray-300">
-              Provided online tuition (excellent feedback), became Campus
-              Ambassador for Lead Academy & WASDA Foundation, and served as a
-              friend, consultant, and guide to many peers.
+              • Business Case Competitions
+              • Hult Prize
+              • CADQuest
+              • Engineering Challenges
+            </p>
+          </div>
+
+          <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-pink-500/30 transition transform hover:-translate-y-2 hover:scale-105">
+            <h3 className="text-xl font-semibold text-pink-400 mb-2">
+              Professional Development
+            </h3>
+            <p className="text-gray-300">
+              • Campus Ambassador (5 organizations)
+              • International Conferences
+              • Mock Interview with CEO @NextJobz
+              • Volunteer across university initiatives
             </p>
           </div>
         </div>
