@@ -410,19 +410,22 @@ export default function App() {
               fontSize: "20px",
             }}>Programming & Software Development</p>
 
-              C
-              C++
-              Python
-              HTML
-              CSS
-              JavaScript
-              React
+              C,
+              C++,
+              Python,
+              HTML,
+              CSS,
+              JavaScript,
+              React,
               Git</span>
           </div>
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-purple-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <Cpu size={32} className="text-purple-400" />
-            <span><p>Robotics & Embedded Systems</p>
+            <span><p style={{
+              color: "#9b53e2",
+              fontSize: "20px",
+            }}>Robotics & Embedded Systems</p>
               Micro Controllers
               Sensors
               Actuators
@@ -440,7 +443,10 @@ export default function App() {
           {/* Research & Engineering */}
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-yellow-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <BookOpen size={32} className="text-yellow-400" />
-            <span><p>Research & Technical Writing</p>
+            <span><p style={{
+              color: "#fad960",
+              fontSize: "20px",
+            }}>Research & Technical Writing</p>
               Academic Writing
               Literature Review
               Scientific Presentations
@@ -451,7 +457,10 @@ export default function App() {
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-pink-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <Microscope size={32} className="text-pink-400" />
-            <span><p>Materials Engineering</p>
+            <span><p style={{
+              color: "#f43487",
+              fontSize: "20px",
+            }}>Materials Engineering</p>
               Metallography
               Materials Characterization
               Biomaterials
@@ -461,7 +470,10 @@ export default function App() {
           {/* Creative & Business */}
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-indigo-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <Palette size={32} className="text-indigo-400" />
-            <span><p>Design & Content Creation</p>
+            <span><p style={{
+              color: "#42749b",
+              fontSize: "20px",
+            }}>Design & Content Creation</p>
               Adobe Illustrator
               Canva
               Video Editing
@@ -477,7 +489,10 @@ export default function App() {
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-orange-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <Briefcase size={32} className="text-orange-400" />
-            <span><p>Entrepreneurship</p>
+            <span><p style={{
+              color: "#ff8120",
+              fontSize: "20px",
+            }}>Entrepreneurship</p>
               Business Development
               Startup Ideation
               Case Analysis
@@ -488,7 +503,10 @@ export default function App() {
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-teal-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <Users size={32} className="text-teal-400" />
-            <span><p>Leadership</p>
+            <span><p style={{
+              color: "#28eee8",
+              fontSize: "20px",
+            }}>Leadership</p>
               Event Coordination
               Team Management
               Public Speaking
