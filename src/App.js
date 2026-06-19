@@ -541,21 +541,10 @@ export default function App() {
               Research
             </h3>
             <p className="text-gray-300">
-              • Literature Review on Biomaterials
-              • IEEE CUET & IEOM BUET 3MT
-              • Research Symposium Presenter
-              • Research Team Member
-            </p>
-          </div>
-
-          <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-pink-500/30 transition transform hover:-translate-y-2 hover:scale-105">
-            <h3 className="text-xl font-semibold text-pink-400 mb-2">
-              Leadership & Volunteering
-            </h3>
-            <p className="text-gray-300">
-              Served as CR & TR of my department, organized MME Fest 2024,
-              volunteered in multiple club events, and contributed to BUET EDC &
-              other student activities.
+              • Literature Review on Biomaterials <br />
+              • IEEE CUET & IEOM BUET 3MT<br />
+              • Research Symposium Presenter<br />
+              • Research Team Member<br />
             </p>
           </div>
 
@@ -564,9 +553,9 @@ export default function App() {
               Entrepreneurship
             </h3>
             <p className="text-gray-300">
-              • Founder – Spark Lifestyle
-              • Co-founder – RoboTronics
-              • Founder – RAN Academy
+              • Founder – Spark Lifestyle<br />
+              • Co-founder – RoboTronics<br />
+              • Founder – RAN Academy<br />
               • Startup & Ideation Competitions
             </p>
           </div>
@@ -576,10 +565,10 @@ export default function App() {
               Ledership
             </h3>
             <p className="text-gray-300">
-              • Executive Member of multiple BUET clubs
-              • Event Coordinator – TEDx BUET
-              • Department CR & TR
-              • Organizer of departmental festivals
+              • Executive Member of multiple BUET clubs<br />
+              • Event Coordinator – TEDx BUET<br />
+              • Department CR & TR<br />
+              • Organizer of departmental festivals<br />
             </p>
           </div>
 
@@ -588,9 +577,9 @@ export default function App() {
               Competitive Excellence
             </h3>
             <p className="text-gray-300">
-              • Business Case Competitions
-              • Hult Prize
-              • CADQuest
+              • Business Case Competitions<br />
+              • Hult Prize<br />
+              • CADQuest<br />
               • Engineering Challenges
             </p>
           </div>
@@ -600,9 +589,9 @@ export default function App() {
               Professional Development
             </h3>
             <p className="text-gray-300">
-              • Campus Ambassador (5 organizations)
-              • International Conferences
-              • Mock Interview with CEO @NextJobz
+              • Campus Ambassador (5 organizations)<br />
+              • International Conferences<br />
+              • Mock Interview with CEO @NextJobz<br />
               • Volunteer across university initiatives
             </p>
           </div>
