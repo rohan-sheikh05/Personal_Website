@@ -530,8 +530,8 @@ export default function App() {
               National Recognition
             </h3>
             <p className="text-gray-300">
-              • 3rd Place – Robolution 2025
-              • 2nd Place – DRMC Science Festival
+              • 3rd Place – Robolution 2025<br />
+              • 2nd Place – DRMC Science Festival<br />
               • Multiple national robotics competitions
             </p>
           </div>
