@@ -407,7 +407,7 @@ export default function App() {
             <Code size={32} className="text-blue-400" />
             <span><p style={{
               color: "#60a5fa",
-              font-size: "16px",
+              fontsize: "16px",
             }}>Programming & Software Development</p>
 
               C
