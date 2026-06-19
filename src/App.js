@@ -358,44 +358,23 @@ export default function App() {
 
             <p style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
               <p>
-                I am an undergraduate student at Bangladesh University of
-                Engineering and Technology (BUET), specializing in Materials and
-                Metallurgical Engineering. My academic journey has fueled a
-                strong passion for advanced materials, biomaterials, and
-                sustainable innovations, with a particular interest in how
-                cutting-edge research can translate into real-world applications
-                that benefit society.
+                Assalamualaikum! I'm Rohan, an undergraduate student in the Department of Materials and Metallurgical Engineering at the Bangladesh University of Engineering and Technology (BUET). My academic interests lie at the intersection of advanced materials, biomaterials, and sustainable engineering, with a long-term goal of translating research into practical technologies that improve lives.
               </p>
+
               <p>
-                {" "}
-                Alongside my researchinterests, I am deeply curious about
-                innovative technologies and artificial intelligence (AI),
-                exploring how they can be integrated with engineering solutions
-                to address practical challenges. I am especially eager to work
-                on biomaterials, biometals, and biodegradable metals, with a
-                vision of contributing to future healthcare and sustainable
-                industries.
+                Beyond materials science, I enjoy exploring emerging technologies such as artificial intelligence, robotics, and the Internet of Things (IoT). I believe that meaningful innovation happens when different disciplines come together, and I am constantly looking for opportunities to combine engineering, technology, and research to solve real-world problems.
               </p>
-              Beyond academics, I actively pursue entrepreneurial ventures and
-              problem-solving initiatives. I founded Spark Lifestyle, an
-              e-commerce platform focused on bringing innovative gadgets to the
-              Bangladeshi market, which allowed me to learn firsthand about
-              business development, digital strategy, and customer engagement. I
-              also continue to generate new ideas around campus-centered
-              businesses, IoT-based solutions, and sustainability-focused
-              startups. I am constantly seeking opportunities to bridge the gap
-              between research and entrepreneurship, bringing together the
-              worlds of science, technology, and business. Whether it’s through
-              academic exploration, ideation challenges, or tech-based projects,
-              my goal is to create impactful solutions that resonate beyond the
-              lab and classroom.
+
               <p>
-                {" "}
-                Outside of these pursuits, I enjoy content creation—sharing
-                insights on research, innovation, and engineering life on
-                platforms like  and YouTube. This helps me connect with
-                l ike-minded individuals while building a community centered
-                around knowledge-sharing and inspiration.
+                Alongside academics, I actively engage in leadership, entrepreneurship, and collaborative projects. Over the years, I have served in several student organizations, coordinated university events, represented my department as a class representative, and participated in business case competitions, research presentations, and national robotics competitions. These experiences have strengthened my communication, teamwork, and problem-solving skills while exposing me to diverse perspectives beyond the classroom.
+              </p>
+
+              <p>
+                I am also passionate about building ideas into reality. From founding Spark Lifestyle, an e-commerce venture, to co-founding RoboTronics and contributing to research and innovation initiatives, I enjoy creating solutions that blend technology with practical impact. Whether working on engineering projects, startup ideas, or interdisciplinary collaborations, I am motivated by the challenge of turning concepts into meaningful outcomes.
+              </p>
+
+              <p>
+                Outside of academics and projects, I enjoy sharing my learning journey through content creation, writing, and community engagement. I believe that knowledge becomes more valuable when it is shared, and I hope to inspire others by documenting my experiences in engineering, research, innovation, and entrepreneurship. As I continue to grow, my aspiration is to bridge the worlds of science, technology, and business to develop solutions that create lasting value for society.
               </p>
             </p>
           </div>
