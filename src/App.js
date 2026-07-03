@@ -799,7 +799,7 @@ export default function App() {
             </a>
           </div>
 
-          {/* Phone */}
+          {/* Phone
           <div className="flex flex-col items-center bg-gray-800 rounded-xl p-6 shadow-lg hover:scale-105 transition transform">
             <svg
               className="w-7 h-7 text-green-400 mb-2"
@@ -815,7 +815,7 @@ export default function App() {
             >
               +880 1725577949
             </a>
-          </div>
+          </div> */}
 
           {/* Address */}
           <div className="flex flex-col items-center bg-gray-800 rounded-xl p-6 shadow-lg hover:scale-105 transition transform">
