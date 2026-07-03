@@ -653,58 +653,62 @@ export default function App() {
               Line Following Robot
             </h3>
             <p className="text-gray-300">
-              Arduino Uno, IR sensors, motors, L298N driver – built and competed
-              in a robotics challenge.
+              Arduino nano, IR sensor array, n20 motors, L298N motor driver, Buck & Boost Module, Programable Switch, Display, Ultrasonic sensor – built and competed
+              in multiple robotics challenge.
             </p>
           </div>
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-yellow-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <h3 className="text-xl font-bold mb-2 text-yellow-400">
-              IoT Temp & Humidity Monitor
+              Ammeter & Voltmeter
             </h3>
             <p className="text-gray-300">
-              Affordable IoT device for industrial environment monitoring
-              (student prototype).
+              Breadborad, Arduino Nano, Jumper wires, resistors, potentiometer, display - made a ammeter & voltemeter from scrach based on core theory.
             </p>
           </div>
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-yellow-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <h3 className="text-xl font-bold mb-2 text-yellow-400">
-              E-commerce Business
+              Emergency delivery Drone
             </h3>
             <p className="text-gray-300">
-              Spark Lifestyle – Tech gadgets & electronics store, built from
-              scratch in Bangladesh.
+              On going project, The goal is to make a modern, intelligent drone that can deliver emergency services in case of rescue, disaster, and in areas difficult to reach.
             </p>
           </div>
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-yellow-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <h3 className="text-xl font-bold mb-2 text-yellow-400">
-              RAN Academy
+              Bluetooth Car
             </h3>
             <p className="text-gray-300">
-              Founded a teaching platform helping students with academic
-              guidance, online and offline.
+              Arduino Nano, Bluetooth module, N20 motors - Made a Bluetooth car which is completely controllable wirelessly from any smartphone.
             </p>
           </div>
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-yellow-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <h3 className="text-xl font-bold mb-2 text-yellow-400">
-              Research Projects
+              PennyFlow-Daily Expence tracking App
             </h3>
             <p className="text-gray-300">
-              Literature review on biodegradable biometals for bone implants +
-              training & PhD collaboration.
+              I built this personal expense tracking application to manage my finances more effectively. I implemented real-time balance updates and category-based spending visualization, creating a responsive UI that makes it easy for me to monitor my daily cash flow.
             </p>
           </div>
 
           <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-yellow-500/30 transition transform hover:-translate-y-2 hover:scale-105">
             <h3 className="text-xl font-bold mb-2 text-yellow-400">
-              Creative & Design Works
+              MME Academic Archive Website
             </h3>
             <p className="text-gray-300">
-              Poster design for BUET Entrepreneur Club, Adobe Illustrator &
-              graphics projects.
+              I developed this centralized academic portal to streamline resource sharing within the MME department. I curated and organized question banks, class notes, and essential learning materials for all eight terms, creating a clean, searchable, and accessible archive to help my peers succeed academically.
+            </p>
+          </div>
+
+          <div className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-yellow-500/30 transition transform hover:-translate-y-2 hover:scale-105">
+            <h3 className="text-xl font-bold mb-2 text-yellow-400">
+              2D Game Development
+            </h3>
+            <p className="text-gray-300">
+              On going project, Working to build a 2D Action Game. 
             </p>
           </div>
         </div>
