@@ -170,6 +170,7 @@ export default function App() {
     `${process.env.PUBLIC_URL}/pic16.jpeg`,
     `${process.env.PUBLIC_URL}/pic17.jpeg`,
     `${process.env.PUBLIC_URL}/pic18.jpeg`,
+    `${process.env.PUBLIC_URL}/pic19.jpg`,
   ];
 
   const certificates = [
