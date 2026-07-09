@@ -13,13 +13,9 @@ import {
   Briefcase,
   Users,
   Globe,
-  Facebook,
-  Phone,
-  MapPin,
   Cpu,
   Database,
   Code,
-  Settings,
 } from "lucide-react";
 
 import react from "react";
