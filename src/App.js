@@ -18,7 +18,7 @@ import {
   Code,
 } from "lucide-react";
 
-import react from "react";
+
 import Slider from "react-slick";
 
 // Import slick-carousel CSS
