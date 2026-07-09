@@ -154,6 +154,7 @@ export default function App() {
   const images = [
     `${process.env.PUBLIC_URL}/pic1.jpg`,
     `${process.env.PUBLIC_URL}/pic2.jpeg`,
+    `${process.env.PUBLIC_URL}/pic19.jpg`,
     `${process.env.PUBLIC_URL}/pic3.jpeg`,
     `${process.env.PUBLIC_URL}/pic4.jpeg`,
     `${process.env.PUBLIC_URL}/pic5.jpeg`,
@@ -170,7 +171,7 @@ export default function App() {
     `${process.env.PUBLIC_URL}/pic16.jpeg`,
     `${process.env.PUBLIC_URL}/pic17.jpeg`,
     `${process.env.PUBLIC_URL}/pic18.jpeg`,
-    `${process.env.PUBLIC_URL}/pic19.jpg`,
+    
   ];
 
   const certificates = [
