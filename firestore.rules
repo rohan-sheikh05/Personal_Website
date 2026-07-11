@@ -1,0 +1,58 @@
+rules_version = '2';
+
+// Paste this into: Firebase Console -> Firestore Database -> Rules -> Publish
+//
+// Logic: anyone can READ (so the public site works for visitors), but
+// only a logged-in admin can WRITE. Since there's no public sign-up flow
+// in this app (see AdminLogin.jsx), the only account that can ever
+// authenticate is the one you create yourself in the Firebase console -
+// so `request.auth != null` is sufficient here without hardcoding a UID.
+//
+// If you want to be extra strict later, replace `request.auth != null`
+// with `request.auth.uid == "YOUR_FIREBASE_UID"` (find your UID in
+// Authentication -> Users after creating your account).
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /heroImages/{docId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    match /skills/{docId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    match /achievements/{docId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    match /certificates/{docId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    match /projects/{docId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    match /clubRoles/{docId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    match /siteConfig/{docId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    // Deny everything else by default
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

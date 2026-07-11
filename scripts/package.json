@@ -1,0 +1,9 @@
+{
+  "name": "portfolio-seed-script",
+  "private": true,
+  "version": "1.0.0",
+  "description": "One-time Firestore seed script. Not part of the deployed site.",
+  "dependencies": {
+    "firebase-admin": "^12.0.0"
+  }
+}

@@ -1,0 +1,14 @@
+rules_version = '2';
+
+// Paste this into: Firebase Console -> Storage -> Rules -> Publish
+// Same logic as firestore.rules: public read, admin-only write.
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read: if true;
+      allow write: if request.auth != null
+                   && request.resource.size < 10 * 1024 * 1024; // 10MB cap per file
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "heroImages": [
+    { "url": "https://rohansheikh.dpdns.org/pic1.jpg", "alt": "Rohan Sheikh - photo 1", "order": 0 },
+    { "url": "https://rohansheikh.dpdns.org/pic2.jpeg", "alt": "Rohan Sheikh - photo 2", "order": 1 },
+    { "url": "https://rohansheikh.dpdns.org/pic19.jpg", "alt": "Rohan Sheikh - photo 3", "order": 2 },
+    { "url": "https://rohansheikh.dpdns.org/pic3.jpeg", "alt": "Rohan Sheikh - photo 4", "order": 3 },
+    { "url": "https://rohansheikh.dpdns.org/pic4.jpeg", "alt": "Rohan Sheikh - photo 5", "order": 4 },
+    { "url": "https://rohansheikh.dpdns.org/pic5.jpeg", "alt": "Rohan Sheikh - photo 6", "order": 5 },
+    { "url": "https://rohansheikh.dpdns.org/pic6.jpeg", "alt": "Rohan Sheikh - photo 7", "order": 6 },
+    { "url": "https://rohansheikh.dpdns.org/pic7.jpeg", "alt": "Rohan Sheikh - photo 8", "order": 7 },
+    { "url": "https://rohansheikh.dpdns.org/pic8.jpeg", "alt": "Rohan Sheikh - photo 9", "order": 8 },
+    { "url": "https://rohansheikh.dpdns.org/pic9.jpeg", "alt": "Rohan Sheikh - photo 10", "order": 9 },
+    { "url": "https://rohansheikh.dpdns.org/pic10.jpeg", "alt": "Rohan Sheikh - photo 11", "order": 10 },
+    { "url": "https://rohansheikh.dpdns.org/pic11.jpeg", "alt": "Rohan Sheikh - photo 12", "order": 11 },
+    { "url": "https://rohansheikh.dpdns.org/pic12.jpeg", "alt": "Rohan Sheikh - photo 13", "order": 12 },
+    { "url": "https://rohansheikh.dpdns.org/pic13.jpeg", "alt": "Rohan Sheikh - photo 14", "order": 13 },
+    { "url": "https://rohansheikh.dpdns.org/pic14.jpeg", "alt": "Rohan Sheikh - photo 15", "order": 14 },
+    { "url": "https://rohansheikh.dpdns.org/pic15.jpeg", "alt": "Rohan Sheikh - photo 16", "order": 15 },
+    { "url": "https://rohansheikh.dpdns.org/pic16.jpeg", "alt": "Rohan Sheikh - photo 17", "order": 16 },
+    { "url": "https://rohansheikh.dpdns.org/pic17.jpeg", "alt": "Rohan Sheikh - photo 18", "order": 17 },
+    { "url": "https://rohansheikh.dpdns.org/pic18.jpeg", "alt": "Rohan Sheikh - photo 19", "order": 18 }
+  ],
+  "skills": [
+    { "title": "Programming & Software Development", "icon": "Code", "color": "#60a5fa", "items": ["C", "C++", "Python", "HTML", "CSS", "JavaScript", "React", "Git"], "order": 0 },
+    { "title": "Robotics & Embedded Systems", "icon": "Cpu", "color": "#9b53e2", "items": ["Micro Controllers", "Sensors", "Actuators", "Electronics", "Automation", "IoT Prototyping"], "order": 1 },
+    { "title": "Microsoft Office", "icon": "Database", "color": "#4ade80", "items": [], "order": 2 },
+    { "title": "Research & Technical Writing", "icon": "BookOpen", "color": "#fad960", "items": ["Academic Writing", "Literature Review", "Scientific Presentations", "3MT", "Reference Management"], "order": 3 },
+    { "title": "Materials Engineering", "icon": "Microscope", "color": "#f43487", "items": ["Metallography", "Materials Characterization", "Biomaterials"], "order": 4 },
+    { "title": "Design & Content Creation", "icon": "Palette", "color": "#42749b", "items": ["Adobe Illustrator", "Canva", "Video Editing", "Brand Identity", "Presentation Design"], "order": 5 },
+    { "title": "CAD & PCB Design", "icon": "Film", "color": "#f87171", "items": [], "order": 6 },
+    { "title": "Entrepreneurship", "icon": "Briefcase", "color": "#ff8120", "items": ["Business Development", "Startup Ideation", "Case Analysis", "Pitch Decks", "Market Validation"], "order": 7 },
+    { "title": "Leadership", "icon": "Users", "color": "#28eee8", "items": ["Event Coordination", "Team Management", "Public Speaking", "Project Planning", "Community Building"], "order": 8 }
+  ],
+  "achievements": [
+    { "title": "National Recognition", "points": ["3rd Place – Robolution 2025", "2nd Place – DRMC Science Festival", "Multiple national robotics competitions"], "order": 0 },
+    { "title": "Research", "points": ["Literature Review on Biomaterials", "IEEE CUET & IEOM BUET 3MT", "Research Symposium Presenter", "Research Team Member"], "order": 1 },
+    { "title": "Entrepreneurship", "points": ["Founder – Spark Lifestyle", "Co-founder – RoboTronics", "Founder – RAN Academy", "Startup & Ideation Competitions"], "order": 2 },
+    { "title": "Leadership", "points": ["Executive Member of multiple BUET clubs", "Event Coordinator – TEDx BUET", "Department CR & TR", "Organizer of departmental festivals"], "order": 3 },
+    { "title": "Competitive Excellence", "points": ["Business Case Competitions", "Hult Prize", "CADQuest", "Engineering Challenges"], "order": 4 },
+    { "title": "Professional Development", "points": ["Campus Ambassador (5 organizations)", "International Conferences", "Mock Interview with CEO @NextJobz", "Volunteer across university initiatives"], "order": 5 }
+  ],
+  "certificates": [
+    { "url": "https://rohansheikh.dpdns.org/certificates/cert1.png", "title": "Intra-BUET Robo Challenge (LFR segment)", "order": 0 },
+    { "url": "https://rohansheikh.dpdns.org/certificates/cert2.png", "title": "CADQUEST 3.0 by BUET Automobile Club", "order": 1 },
+    { "url": "https://rohansheikh.dpdns.org/certificates/cert3.png", "title": "Faith and Fitness Run 5KM Marathon", "order": 2 },
+    { "url": "https://rohansheikh.dpdns.org/certificates/cert4.jpg", "title": "SciBlitz 1.0 by IEEE CUET Student Branch", "order": 3 },
+    { "url": "https://rohansheikh.dpdns.org/certificates/cert5.png", "title": "CAPITELIZER '25 by BUP Business Society", "order": 4 },
+    { "url": "https://rohansheikh.dpdns.org/certificates/cert6.jpg", "title": "ROBO Carnival 2026 by BUET Robotics Society", "order": 5 },
+    { "url": "https://rohansheikh.dpdns.org/certificates/cert7.jpeg", "title": "MIST Robolution 2025 - Participation", "order": 6 },
+    { "url": "https://rohansheikh.dpdns.org/certificates/cert8.jpg", "title": "MIST Robolution 2025 - 2nd Runners Up", "order": 7 },
+    { "url": "https://rohansheikh.dpdns.org/certificates/cert9.jpg", "title": "Vitalizers 3.0 by BRAC BEF - Semifinalist", "order": 8 },
+    { "url": "https://rohansheikh.dpdns.org/certificates/cert10.jpg", "title": "TEDxBUET 2025 - Event Co-ordinator", "order": 9 },
+    { "url": "https://rohansheikh.dpdns.org/certificates/cert11.jpg", "title": "BEAR Summit 2025", "order": 10 },
+    { "url": "https://rohansheikh.dpdns.org/certificates/cert12.jpg", "title": "CaseSpecs 3.0 by KUET Spectrum", "order": 11 }
+  ],
+  "projects": [
+    { "title": "Line Following Robot", "description": "Arduino Nano, IR sensor array, N20 motors, L298N motor driver, buck & boost module, programmable switch, display, ultrasonic sensor – built and competed in multiple robotics challenges.", "order": 0 },
+    { "title": "Ammeter & Voltmeter", "description": "Breadboard, Arduino Nano, jumper wires, resistors, potentiometer, display - built an ammeter & voltmeter from scratch based on core theory.", "order": 1 },
+    { "title": "Emergency Delivery Drone", "description": "Ongoing project. The goal is to make a modern, intelligent drone that can deliver emergency services in case of rescue, disaster, and in areas difficult to reach.", "order": 2 },
+    { "title": "Bluetooth Car", "description": "Arduino Nano, Bluetooth module, N20 motors - built a Bluetooth car that is completely controllable wirelessly from any smartphone.", "order": 3 },
+    { "title": "PennyFlow – Daily Expense Tracking App", "description": "Built this personal expense tracking application to manage finances more effectively, with real-time balance updates and category-based spending visualization in a responsive UI.", "order": 4 },
+    { "title": "MME Academic Archive Website", "description": "Developed this centralized academic portal to streamline resource sharing within the MME department - curated question banks, class notes, and learning materials for all eight terms into a clean, searchable archive.", "order": 5 },
+    { "title": "2D Game Development", "description": "Ongoing project. Working to build a 2D action game.", "order": 6 }
+  ],
+  "clubRoles": []
+}
