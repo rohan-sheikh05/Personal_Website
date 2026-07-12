@@ -234,4 +234,10 @@ export const fallbackProjects = [
 
 // No fallback club data yet — Rohan adds these himself via the admin panel
 // (or the seed script, if he provides the role history up front).
+// One entry per ORGANIZATION. If you've held multiple roles at the same
+// club over time (Member -> Executive -> Director, etc.), list them all
+// inside that organization's `positions` array, most recent first (index 0)
+// — the site renders them as a connected timeline under one logo, the same
+// way LinkedIn groups multiple positions under one company. Left empty here;
+// add your real ones through the admin panel at /admin.
 export const fallbackClubRoles = [];

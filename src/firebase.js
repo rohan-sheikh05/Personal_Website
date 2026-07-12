@@ -13,7 +13,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
-import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -37,5 +36,9 @@ const app = initializeApp(firebaseConfig);
 
 export const db = getFirestore(app);
 export const auth = getAuth(app);
-export const storage = getStorage(app);
+// Note: Firebase Storage is intentionally not used here. As of Feb 2026,
+// Firebase requires the paid Blaze plan just to provision a Storage
+// bucket. File uploads (photos, certificates, club logos, CV) instead go
+// through Cloudinary's free plan - see src/utils/uploadImage.js. You can
+// ignore/delete storage.rules, it's no longer used.
 export default app;

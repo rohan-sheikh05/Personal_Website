@@ -16,9 +16,9 @@ import {
   query,
   updateDoc,
 } from "firebase/firestore";
-import { deleteObject, getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { Pencil, Trash2, Plus, X, Upload } from "lucide-react";
-import { db, storage } from "../firebase";
+import { db } from "../firebase";
+import { uploadFile } from "../utils/uploadImage";
 import iconMap, { iconNames } from "../data/iconMap";
 
 const emptyFormFor = (fields) => {
@@ -83,10 +83,10 @@ export default function CollectionEditor({ config }) {
   async function handleDelete(item) {
     if (!window.confirm(`Delete this ${label.toLowerCase()} entry? This can't be undone.`)) return;
     try {
-      if (item.storagePath) {
-        await deleteObject(ref(storage, item.storagePath)).catch(() => {});
-      }
       await deleteDoc(doc(db, collectionName, item.id));
+      // Note: the Cloudinary file itself isn't deleted here — unsigned
+      // uploads can't delete without exposing an API secret client-side.
+      // Well within the free tier for a personal portfolio's scale.
     } catch (err) {
       setError(`Couldn't delete: ${err.message}`);
     }
@@ -111,11 +111,7 @@ export default function CollectionEditor({ config }) {
 
       // Image upload, if this collection type has one and a new file was picked
       if (hasImage && imageFile) {
-        const storagePath = `${collectionName}/${Date.now()}-${imageFile.name}`;
-        const storageRef = ref(storage, storagePath);
-        await uploadBytes(storageRef, imageFile);
-        payload[imageFieldName] = await getDownloadURL(storageRef);
-        payload.storagePath = storagePath;
+        payload[imageFieldName] = await uploadFile(imageFile);
       }
 
       if (editingId === "new") {

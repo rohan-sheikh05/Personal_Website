@@ -4,6 +4,7 @@ import { LogOut, ExternalLink } from "lucide-react";
 import { useAuth } from "../contexts/AuthContext";
 import CollectionEditor from "./CollectionEditor";
 import ManageCV from "./ManageCV";
+import ManageClubAffiliations from "./ManageClubAffiliations";
 import adminConfig from "./adminConfig";
 
 const NAV_ITEMS = [
@@ -12,7 +13,7 @@ const NAV_ITEMS = [
   { key: "achievements", label: adminConfig.achievements.label },
   { key: "certificates", label: adminConfig.certificates.label },
   { key: "projects", label: adminConfig.projects.label },
-  { key: "clubRoles", label: adminConfig.clubRoles.label },
+  { key: "clubRoles", label: "Club Affiliations" },
   { key: "cv", label: "CV / Resume" },
 ];
 
@@ -55,7 +56,13 @@ export default function AdminDashboard() {
 
       {/* Content */}
       <main className="flex-1 p-6 md:p-10 max-w-4xl">
-        {active === "cv" ? <ManageCV /> : <CollectionEditor config={adminConfig[active]} />}
+        {active === "cv" ? (
+          <ManageCV />
+        ) : active === "clubRoles" ? (
+          <ManageClubAffiliations />
+        ) : (
+          <CollectionEditor config={adminConfig[active]} />
+        )}
       </main>
     </div>
   );

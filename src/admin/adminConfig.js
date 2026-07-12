@@ -54,19 +54,6 @@ const adminConfig = {
       { name: "description", label: "Description", type: "textarea", required: true },
     ],
   },
-  clubRoles: {
-    label: "Club Affiliations",
-    collection: "clubRoles",
-    hasImage: true,
-    imageFieldName: "imageUrl",
-    fields: [
-      { name: "role", label: "Role / position", type: "text", required: true },
-      { name: "organization", label: "Club / organization", type: "text", required: true },
-      { name: "startDate", label: "Start date", type: "date", placeholder: "Jan 2024", required: true },
-      { name: "endDate", label: "End date (blank = Present)", type: "date", placeholder: "Dec 2024" },
-      { name: "description", label: "Description", type: "textarea" },
-    ],
-  },
 };
 
 export default adminConfig;

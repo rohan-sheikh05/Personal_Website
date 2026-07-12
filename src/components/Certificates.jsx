@@ -1,9 +1,10 @@
 // src/components/Certificates.jsx
 import React from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import useCollection from "../hooks/useCollection";
 import { fallbackCertificates } from "../data/fallbackData";
-
 const sliderSettings = {
   dots: true,
   infinite: true,

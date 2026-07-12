@@ -50,7 +50,7 @@ export default function useCollection(collectionName, fallbackData = []) {
     // fallbackData is a fresh array/object each render for most callers,
     // so intentionally excluded - it should only ever depend on which
     // collection we're watching.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, [collectionName]);
 
   return { data, loading, usingFallback };

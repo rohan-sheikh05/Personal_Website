@@ -5,9 +5,9 @@
 
 import React, { useEffect, useState } from "react";
 import { doc, onSnapshot, setDoc } from "firebase/firestore";
-import { deleteObject, getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { FileText, Upload, Trash2 } from "lucide-react";
-import { db, storage } from "../firebase";
+import { db } from "../firebase";
+import { uploadFile } from "../utils/uploadImage";
 
 export default function ManageCV() {
   const [cvUrl, setCvUrl] = useState(null);
@@ -33,20 +33,14 @@ export default function ManageCV() {
     setSaving(true);
     setError("");
     try {
-      // remove the old file first so Storage doesn't accumulate old CVs
-      if (cvPath) {
-        await deleteObject(ref(storage, cvPath)).catch(() => {});
-      }
-      const storagePath = `cv/${Date.now()}-${file.name}`;
-      const storageRef = ref(storage, storagePath);
-      await uploadBytes(storageRef, file);
-      const url = await getDownloadURL(storageRef);
+      const url = await uploadFile(file);
 
       await setDoc(doc(db, "siteConfig", "main"), {
         cvUrl: url,
-        cvStoragePath: storagePath,
         cvFileName: file.name,
       }, { merge: true });
+      // Note: old CV file on Cloudinary isn't deleted (unsigned uploads
+      // can't delete client-side) — negligible at a single-PDF scale.
 
       setFile(null);
     } catch (err) {
@@ -59,10 +53,7 @@ export default function ManageCV() {
   async function handleRemove() {
     if (!window.confirm("Remove the current CV from the site?")) return;
     try {
-      if (cvPath) {
-        await deleteObject(ref(storage, cvPath)).catch(() => {});
-      }
-      await setDoc(doc(db, "siteConfig", "main"), { cvUrl: null, cvStoragePath: null, cvFileName: null }, { merge: true });
+      await setDoc(doc(db, "siteConfig", "main"), { cvUrl: null, cvFileName: null }, { merge: true });
     } catch (err) {
       setError(`Couldn't remove: ${err.message}`);
     }

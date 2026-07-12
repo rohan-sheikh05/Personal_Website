@@ -11,12 +11,14 @@
   "main": "src/index.tsx",
   "dependencies": {
     "@heroicons/react": "2.2.0",
+    "firebase": "^12.16.0",
     "framer-motion": "12.23.12",
     "heroicons": "2.2.0",
     "loader-utils": "3.2.1",
     "lucide-react": "0.544.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-router-dom": "^7.18.1",
     "react-scripts": "5.0.1",
     "react-slick": "0.31.0",
     "slick-carousel": "1.8.1"
