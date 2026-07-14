@@ -26,7 +26,7 @@ import AdminDashboard from "./admin/AdminDashboard";
 
 function MainSite() {
   return (
-    <div className="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen font-sans relative">
+    <div className="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white min-h-screen font-sans relative">
       <Background />
       <Navbar />
       <Hero />

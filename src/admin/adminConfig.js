@@ -16,7 +16,10 @@ const adminConfig = {
     collection: "heroImages",
     hasImage: true,
     imageFieldName: "url",
-    fields: [{ name: "alt", label: "Description (for accessibility)", type: "text", placeholder: "Rohan at TEDxBUET" }],
+    fields: [
+      { name: "alt", label: "Short title (shown as the caption heading)", type: "text", placeholder: "Rohan at TEDxBUET" },
+      { name: "description", label: "Short description of the event/photo (shown under the title)", type: "textarea", placeholder: "Coordinating logistics backstage at TEDxBUET 2025." },
+    ],
   },
   skills: {
     label: "Skills",
@@ -43,15 +46,24 @@ const adminConfig = {
     collection: "certificates",
     hasImage: true,
     imageFieldName: "url",
-    fields: [{ name: "title", label: "Certificate title", type: "text", required: true }],
+    fields: [
+      { name: "title", label: "Certificate title", type: "text", required: true },
+      { name: "category", label: "Category (e.g. Awards, Robotics, Research)", type: "text", required: true },
+      { name: "issuer", label: "Issuing institution/organization", type: "text", required: true },
+      { name: "year", label: "Year", type: "text", placeholder: "2026" },
+      { name: "credentialUrl", label: "Credential verification link (optional - falls back to the certificate image if left blank)", type: "text" },
+    ],
   },
   projects: {
     label: "Projects",
     collection: "projects",
-    hasImage: false,
+    hasImage: true,
+    imageFieldName: "thumbnailUrl",
     fields: [
       { name: "title", label: "Project title", type: "text", required: true },
       { name: "description", label: "Description", type: "textarea", required: true },
+      { name: "techStack", label: "Tech stack / tools used (comma-separated)", type: "list" },
+      { name: "link", label: "Project link (GitHub, live demo, etc. — optional)", type: "text" },
     ],
   },
 };

@@ -1,27 +1,50 @@
 // src/components/Achievements.jsx
+// Rebuilt on the shared Card/SectionHeader system (Phase 3).
+
 import React from "react";
+import { motion } from "framer-motion";
+import { Trophy } from "lucide-react";
 import useCollection from "../hooks/useCollection";
 import { fallbackAchievements } from "../data/fallbackData";
+import Card from "./ui/Card";
+import SectionHeader from "./ui/SectionHeader";
 
 export default function Achievements() {
   const { data: achievements } = useCollection("achievements", fallbackAchievements);
 
   return (
-    <section id="achievements" className="px-6 py-20 max-w-6xl mx-auto">
-      <h2 className="text-4xl font-bold mb-12 border-l-4 border-amber-500 pl-4">Achievements</h2>
+    <section id="achievements" className="px-6 py-24 max-w-6xl mx-auto">
+      <SectionHeader
+        eyebrow="Recognition"
+        title="Achievements"
+        subtitle="A snapshot of competitions, research milestones, and leadership roles."
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {achievements.map((a) => (
-          <div
+        {achievements.map((a, index) => (
+          <motion.div
             key={a.id}
-            className="p-6 bg-gray-800 rounded-2xl shadow-lg hover:shadow-pink-500/30 transition transform hover:-translate-y-2 hover:scale-105"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5, delay: (index % 2) * 0.1 }}
           >
-            <h3 className="text-xl font-semibold text-pink-400 mb-2">{a.title}</h3>
-            <ul className="text-gray-300 space-y-1 list-none">
-              {a.points.map((point, i) => (
-                <li key={i}>• {point}</li>
-              ))}
-            </ul>
-          </div>
+            <Card className="h-full">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center flex-shrink-0">
+                  <Trophy size={18} className="text-teal-400" />
+                </div>
+                <h3 className="text-lg font-semibold text-white">{a.title}</h3>
+              </div>
+              <ul className="text-gray-300 space-y-2">
+                {a.points.map((point, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span className="text-teal-400 mt-1">•</span>
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </Card>
+          </motion.div>
         ))}
       </div>
     </section>

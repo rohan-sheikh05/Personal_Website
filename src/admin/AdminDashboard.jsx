@@ -23,8 +23,8 @@ export default function AdminDashboard() {
 
   return (
     <div className="min-h-screen bg-gray-900 flex flex-col md:flex-row">
-      {/* Sidebar */}
-      <aside className="md:w-64 bg-gray-950 border-b md:border-b-0 md:border-r border-gray-800 p-4 flex md:flex-col gap-2 overflow-x-auto md:overflow-visible">
+      {/* Sidebar - sticky so it stays fully visible (including Log out) no matter how long the content on the right is */}
+      <aside className="md:w-64 bg-gray-950 border-b md:border-b-0 md:border-r border-gray-800 p-4 flex md:flex-col gap-2 overflow-x-auto md:overflow-y-auto md:sticky md:top-0 md:self-start md:h-screen">
         <h1 className="hidden md:block text-lg font-bold text-white mb-4 px-2">Admin Panel</h1>
         {NAV_ITEMS.map((item) => (
           <button

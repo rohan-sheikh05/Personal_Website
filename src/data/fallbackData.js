@@ -13,11 +13,26 @@
 // scrach -> scratch, Breadborad -> Breadboard, Expence -> Expense).
 
 export const fallbackAbout = [
-  "Assalamualaikum! I'm Rohan, an undergraduate student in the Department of Materials and Metallurgical Engineering at the Bangladesh University of Engineering and Technology (BUET). My academic interests lie at the intersection of advanced materials, biomaterials, and sustainable engineering, with a long-term goal of translating research into practical technologies that improve lives.",
-  "Beyond materials science, I enjoy exploring emerging technologies such as artificial intelligence, robotics, and the Internet of Things (IoT). I believe that meaningful innovation happens when different disciplines come together, and I am constantly looking for opportunities to combine engineering, technology, and research to solve real-world problems.",
-  "Alongside academics, I actively engage in leadership, entrepreneurship, and collaborative projects. Over the years, I have served in several student organizations, coordinated university events, represented my department as a class representative, and participated in business case competitions, research presentations, and national robotics competitions. These experiences have strengthened my communication, teamwork, and problem-solving skills while exposing me to diverse perspectives beyond the classroom.",
-  "I am also passionate about building ideas into reality. From founding Spark Lifestyle, an e-commerce venture, to co-founding RoboTronics and contributing to research and innovation initiatives, I enjoy creating solutions that blend technology with practical impact. Whether working on engineering projects, startup ideas, or interdisciplinary collaborations, I am motivated by the challenge of turning concepts into meaningful outcomes.",
-  "Outside of academics and projects, I enjoy sharing my learning journey through content creation, writing, and community engagement. I believe that knowledge becomes more valuable when it is shared, and I hope to inspire others by documenting my experiences in engineering, research, innovation, and entrepreneurship. As I continue to grow, my aspiration is to bridge the worlds of science, technology, and business to develop solutions that create lasting value for society.",
+  {
+    heading: null,
+    text: "Assalamualaikum! I'm Rohan, an undergraduate student in the Department of Materials and Metallurgical Engineering at the Bangladesh University of Engineering and Technology (BUET). My academic interests lie at the intersection of advanced materials, biomaterials, and sustainable engineering, with a long-term goal of translating research into practical technologies that improve lives.",
+  },
+  {
+    heading: "Where Materials Meet Innovation",
+    text: "Beyond materials science, I enjoy exploring emerging technologies such as artificial intelligence, robotics, and the Internet of Things (IoT). I believe that meaningful innovation happens when different disciplines come together, and I am constantly looking for opportunities to combine engineering, technology, and research to solve real-world problems.",
+  },
+  {
+    heading: "Beyond the Classroom",
+    text: "Alongside academics, I actively engage in leadership, entrepreneurship, and collaborative projects. Over the years, I have served in several student organizations, coordinated university events, represented my department as a class representative, and participated in business case competitions, research presentations, and national robotics competitions. These experiences have strengthened my communication, teamwork, and problem-solving skills while exposing me to diverse perspectives beyond the classroom.",
+  },
+  {
+    heading: "Building Ideas Into Reality",
+    text: "I am also passionate about building ideas into reality. From founding Spark Lifestyle, an e-commerce venture, to co-founding RoboTronics and contributing to research and innovation initiatives, I enjoy creating solutions that blend technology with practical impact. Whether working on engineering projects, startup ideas, or interdisciplinary collaborations, I am motivated by the challenge of turning concepts into meaningful outcomes.",
+  },
+  {
+    heading: "Sharing the Journey",
+    text: "Outside of academics and projects, I enjoy sharing my learning journey through content creation, writing, and community engagement. I believe that knowledge becomes more valuable when it is shared, and I hope to inspire others by documenting my experiences in engineering, research, innovation, and entrepreneurship. As I continue to grow, my aspiration is to bridge the worlds of science, technology, and business to develop solutions that create lasting value for society.",
+  },
 ];
 
 export const fallbackHeroImages = [
@@ -44,6 +59,7 @@ export const fallbackHeroImages = [
   id: `fallback-hero-${i}`,
   url: `${process.env.PUBLIC_URL}/${file}`,
   alt: `Rohan Sheikh - photo ${i + 1}`,
+  description: "",
   order: i,
 }));
 
@@ -162,22 +178,26 @@ export const fallbackAchievements = [
 ];
 
 export const fallbackCertificates = [
-  { file: "cert1.png", title: "Intra-BUET Robo Challenge (LFR segment)" },
-  { file: "cert2.png", title: "CADQUEST 3.0 by BUET Automobile Club" },
-  { file: "cert3.png", title: "Faith and Fitness Run 5KM Marathon" },
-  { file: "cert4.jpg", title: "SciBlitz 1.0 by IEEE CUET Student Branch" },
-  { file: "cert5.png", title: "CAPITELIZER '25 by BUP Business Society" },
-  { file: "cert6.jpg", title: "ROBO Carnival 2026 by BUET Robotics Society" },
-  { file: "cert7.jpeg", title: "MIST Robolution 2025 - Participation" },
-  { file: "cert8.jpg", title: "MIST Robolution 2025 - 2nd Runners Up" },
-  { file: "cert9.jpg", title: "Vitalizers 3.0 by BRAC BEF - Semifinalist" },
-  { file: "cert10.jpg", title: "TEDxBUET 2025 - Event Co-ordinator" },
-  { file: "cert11.jpg", title: "BEAR Summit 2025" },
-  { file: "cert12.jpg", title: "CaseSpecs 3.0 by KUET Spectrum" },
+  { file: "cert1.png", title: "Intra-BUET Robo Challenge (LFR segment)", category: "Robotics", issuer: "BUET Robotics Society", year: "2025" },
+  { file: "cert2.png", title: "CADQUEST 3.0 by BUET Automobile Club", category: "Engineering", issuer: "BUET Automobile Club", year: "2025" },
+  { file: "cert3.png", title: "Faith and Fitness Run 5KM Marathon", category: "Other", issuer: "Faith and Fitness", year: "2025" },
+  { file: "cert4.jpg", title: "SciBlitz 1.0 by IEEE CUET Student Branch", category: "Research", issuer: "IEEE CUET Student Branch", year: "2025" },
+  { file: "cert5.png", title: "CAPITELIZER '25 by BUP Business Society", category: "Entrepreneurship", issuer: "BUP Business Society", year: "2025" },
+  { file: "cert6.jpg", title: "ROBO Carnival 2026 by BUET Robotics Society", category: "Robotics", issuer: "BUET Robotics Society", year: "2026" },
+  { file: "cert7.jpeg", title: "MIST Robolution 2025 - Participation", category: "Robotics", issuer: "MIST", year: "2025" },
+  { file: "cert8.jpg", title: "MIST Robolution 2025 - 2nd Runners Up", category: "Awards", issuer: "MIST", year: "2025" },
+  { file: "cert9.jpg", title: "Vitalizers 3.0 by BRAC BEF - Semifinalist", category: "Entrepreneurship", issuer: "BRAC BEF", year: "2025" },
+  { file: "cert10.jpg", title: "TEDxBUET 2025 - Event Co-ordinator", category: "Leadership", issuer: "TEDxBUET", year: "2025" },
+  { file: "cert11.jpg", title: "BEAR Summit 2025", category: "Research", issuer: "BEAR Summit", year: "2025" },
+  { file: "cert12.jpg", title: "CaseSpecs 3.0 by KUET Spectrum", category: "Entrepreneurship", issuer: "KUET Spectrum", year: "2025" },
 ].map((c, i) => ({
   id: `fallback-cert-${i}`,
   url: `${process.env.PUBLIC_URL}/certificates/${c.file}`,
   title: c.title,
+  category: c.category,
+  issuer: c.issuer,
+  year: c.year,
+  credentialUrl: "",
   order: i,
 }));
 
@@ -187,6 +207,8 @@ export const fallbackProjects = [
     title: "Line Following Robot",
     description:
       "Arduino Nano, IR sensor array, N20 motors, L298N motor driver, buck & boost module, programmable switch, display, ultrasonic sensor – built and competed in multiple robotics challenges.",
+    techStack: ["Arduino", "Embedded C", "Sensors"],
+    link: "",
     order: 0,
   },
   {
@@ -194,6 +216,8 @@ export const fallbackProjects = [
     title: "Ammeter & Voltmeter",
     description:
       "Breadboard, Arduino Nano, jumper wires, resistors, potentiometer, display - built an ammeter & voltmeter from scratch based on core theory.",
+    techStack: ["Arduino", "Circuit Design"],
+    link: "",
     order: 1,
   },
   {
@@ -201,6 +225,8 @@ export const fallbackProjects = [
     title: "Emergency Delivery Drone",
     description:
       "Ongoing project. The goal is to make a modern, intelligent drone that can deliver emergency services in case of rescue, disaster, and in areas difficult to reach.",
+    techStack: ["Drone Systems", "Automation"],
+    link: "",
     order: 2,
   },
   {
@@ -208,6 +234,8 @@ export const fallbackProjects = [
     title: "Bluetooth Car",
     description:
       "Arduino Nano, Bluetooth module, N20 motors - built a Bluetooth car that is completely controllable wirelessly from any smartphone.",
+    techStack: ["Arduino", "Bluetooth", "Embedded C"],
+    link: "",
     order: 3,
   },
   {
@@ -215,6 +243,8 @@ export const fallbackProjects = [
     title: "PennyFlow – Daily Expense Tracking App",
     description:
       "Built this personal expense tracking application to manage finances more effectively, with real-time balance updates and category-based spending visualization in a responsive UI.",
+    techStack: ["React", "Firebase", "Capacitor"],
+    link: "",
     order: 4,
   },
   {
@@ -222,12 +252,16 @@ export const fallbackProjects = [
     title: "MME Academic Archive Website",
     description:
       "Developed this centralized academic portal to streamline resource sharing within the MME department - curated question banks, class notes, and learning materials for all eight terms into a clean, searchable archive.",
+    techStack: ["JavaScript", "HTML", "CSS"],
+    link: "",
     order: 5,
   },
   {
     id: "fallback-proj-6",
     title: "2D Game Development",
     description: "Ongoing project. Working to build a 2D action game.",
+    techStack: ["Python", "Pygame"],
+    link: "",
     order: 6,
   },
 ];

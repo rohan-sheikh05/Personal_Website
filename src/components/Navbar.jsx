@@ -1,30 +1,72 @@
 // src/components/Navbar.jsx
-import React, { useState } from "react";
+//
+// The hover highlight is now ONE persistent element whose position/width
+// is measured and animated via spring physics, instead of a new element
+// being mounted per-link (the old layoutId approach) - that's what was
+// causing the occasional "mirrored/jumped" glitch under fast mouse
+// movement, since two overlapping shared-layout animations could race.
+// A single continuously-animated element can't do that.
+//
+// Styled as a frosted "liquid glass" pill (translucent + blur + soft inner
+// highlight) rather than a flat color fill.
+//
+// Name is a real <a href="/"> so clicking it does a traditional full
+// navigation back to the homepage.
+
+import React, { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import CVButton from "./CVButton";
 
 const LINKS = [
-  { href: "#about", label: "About", hoverClass: "hover:text-indigo-400" },
-  { href: "#skills", label: "Skills", hoverClass: "hover:text-purple-400" },
-  { href: "#achievements", label: "Achievements", hoverClass: "hover:text-amber-400" },
-  { href: "#certificates", label: "Certificates", hoverClass: "hover:text-green-400" },
-  { href: "#club", label: "Club Affiliations", hoverClass: "hover:text-teal-400" },
-  { href: "#projects", label: "Projects", hoverClass: "hover:text-yellow-400" },
-  { href: "#contact", label: "Contact", hoverClass: "hover:text-blue-400" },
+  { href: "#about", label: "About" },
+  { href: "#skills", label: "Skills" },
+  { href: "#achievements", label: "Achievements" },
+  { href: "#certificates", label: "Certificates" },
+  { href: "#club", label: "Club Affiliations" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [pill, setPill] = useState({ left: 0, width: 0, opacity: 0 });
+  const linkRefs = useRef([]);
+
+  function handleHover(i) {
+    const el = linkRefs.current[i];
+    if (!el) return;
+    setPill({ left: el.offsetLeft, width: el.offsetWidth, opacity: 1 });
+  }
+
+  function handleRowLeave() {
+    setPill((p) => ({ ...p, opacity: 0 }));
+  }
 
   return (
     <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-black/40 backdrop-blur-lg px-4 py-3 rounded-2xl shadow-lg flex items-center justify-between w-[90%] md:w-3/4 z-50">
-      <h1 className="text-xl font-bold text-white">Rohan Sheikh</h1>
+      <a href="/" className="text-xl font-bold text-white hover:text-teal-400 transition-colors">
+        Rohan Sheikh
+      </a>
 
       {/* Desktop links */}
-      <div className="hidden md:flex items-center gap-6 font-semibold text-sm lg:text-base">
-        {LINKS.map((link) => (
-          <a key={link.href} href={link.href} className={`transition ${link.hoverClass}`}>
+      <div
+        className="hidden md:flex items-center gap-1 font-semibold text-sm lg:text-base relative"
+        onMouseLeave={handleRowLeave}
+      >
+        <motion.span
+          className="absolute top-0 h-full rounded-full bg-white/10 backdrop-blur-md border border-white/15 shadow-[inset_0_1px_1px_rgba(255,255,255,0.25)] pointer-events-none"
+          animate={{ left: pill.left, width: pill.width, opacity: pill.opacity }}
+          transition={{ type: "spring", stiffness: 260, damping: 28, mass: 0.6 }}
+        />
+        {LINKS.map((link, i) => (
+          <a
+            key={link.href}
+            ref={(el) => (linkRefs.current[i] = el)}
+            href={link.href}
+            onMouseEnter={() => handleHover(i)}
+            className="relative z-10 px-3 py-2 rounded-full text-gray-200 hover:text-white transition-colors"
+          >
             {link.label}
           </a>
         ))}
@@ -57,7 +99,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`transition ${link.hoverClass}`}
+                  className="transition hover:text-teal-400"
                 >
                   {link.label}
                 </a>

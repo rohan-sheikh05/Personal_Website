@@ -3,55 +3,46 @@
 // BUG FIX from the original: the About text was a <p> containing five more
 // <p> tags. HTML doesn't allow nested <p>s - the browser silently
 // auto-closes the outer tag, which can break the intended spacing/layout.
-// Now it's a <div> wrapper with proper sibling <p> paragraphs.
+//
+// Phase 5: intro paragraph now reads as a pull-quote, remaining paragraphs
+// each get their own short heading instead of running together as one
+// undifferentiated block - easier to scan. Photo gallery now uses the
+// custom StorySlider instead of a plain carousel.
 
 import React from "react";
-import Slider from "react-slick";
 import useCollection from "../hooks/useCollection";
 import { fallbackAbout, fallbackHeroImages } from "../data/fallbackData";
-
-const sliderSettings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2500,
-};
+import SectionHeader from "./ui/SectionHeader";
+import StorySlider from "./StorySlider";
 
 export default function About() {
   const { data: images } = useCollection("heroImages", fallbackHeroImages);
+  const [intro, ...sections] = fallbackAbout;
 
   return (
-    <section id="about" className="flex flex-col items-center gap-8 px-5 py-16 text-white">
-      <div className="max-w-4xl text-left">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="w-[5px] h-8 bg-indigo-600" />
-          <h2 className="text-3xl md:text-4xl font-bold">About Me</h2>
-        </div>
+    <section id="about" className="flex flex-col items-center gap-12 px-6 py-24 text-white max-w-5xl mx-auto">
+      <div className="w-full">
+        <SectionHeader eyebrow="Get to Know Me" title="About Me" subtitle="The person behind the projects." />
 
-        <div className="space-y-4 text-lg leading-relaxed">
-          {fallbackAbout.map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
-          ))}
-        </div>
-      </div>
+        <blockquote className="border-l-4 border-teal-400 pl-5 text-lg sm:text-xl text-gray-200 leading-relaxed italic max-w-3xl">
+          {intro.text}
+        </blockquote>
 
-      <div className="w-full max-w-[700px]">
-        <Slider {...sliderSettings}>
-          {images.map((img) => (
-            <div key={img.id}>
-              <img
-                src={img.url}
-                alt={img.alt || "Rohan Sheikh"}
-                loading="lazy"
-                className="w-full h-[400px] object-cover rounded-xl shadow-lg"
-              />
+        <hr className="border-slate-800 my-8 max-w-3xl" />
+
+        <div className="space-y-6 max-w-3xl">
+          {sections.map((block, i) => (
+            <div key={i}>
+              {block.heading && (
+                <h3 className="text-teal-300 font-semibold text-lg mb-2">{block.heading}</h3>
+              )}
+              <p className="text-gray-300 leading-relaxed">{block.text}</p>
             </div>
           ))}
-        </Slider>
+        </div>
       </div>
+
+      <StorySlider images={images} />
     </section>
   );
 }

@@ -29,8 +29,8 @@ export default function CVButton({ variant = "nav", onClick }) {
 
   const variantClasses =
     variant === "nav"
-      ? `${baseClasses} bg-gradient-to-r from-blue-500 to-purple-500 px-4 py-2 text-sm text-white hover:opacity-90`
-      : `${baseClasses} bg-gradient-to-r from-blue-500 to-purple-500 px-4 py-2 text-white justify-center mt-2`;
+      ? `${baseClasses} bg-teal-500 hover:bg-teal-400 px-4 py-2 text-sm text-slate-950 hover:opacity-90`
+      : `${baseClasses} bg-teal-500 hover:bg-teal-400 px-4 py-2 text-slate-950 justify-center mt-2`;
 
   return (
     <a

@@ -2,7 +2,15 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        // You can name this whatever you want
+        'future': ['Orbitron', 'sans-serif'], 
+      },
+
+    },
   },
   plugins: [],
 };
+
+
