@@ -106,18 +106,18 @@ export default function Hero() {
 
         {/* Text content */}
         <div className="order-2 md:order-1 md:col-span-3 flex flex-col items-center md:items-start text-center md:text-left">
-          <motion.p {...fadeUp(0)} className="text-teal-400 font-semibold tracking-wide mb-2">
-            Hi, I'm
+          <motion.p {...fadeUp(0)} className="text-gray-500 text-4xl font-bold tracking-wide mb-2">
+            Hi,
           </motion.p>
 
           <motion.h1
             {...fadeUp(0.1)}
-            className="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-cyan-400"
+            className="text-white text-5xl sm:text-6xl md:text-7xl font-semibold "
           >
-            Rohan Sheikh
+            I'm <span className="font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-cyan-400 ">Rohan!</span>
           </motion.h1>
 
-          <motion.h2 {...fadeUp(0.2)} className="mt-3 text-xl sm:text-2xl font-semibold text-gray-200">
+          <motion.h2 {...fadeUp(0.2)} className="mt-3 text-xl font-code sm:text-2xl font-semibold text-gray-200">
             Materials Engineer · Researcher · Entrepreneur
           </motion.h2>
 
@@ -143,7 +143,7 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* CTAs */}
+          {/* CTAs 
           <motion.div {...fadeUp(0.55)} className="flex flex-wrap gap-4 mt-8">
             <a
               href="#projects"
@@ -157,7 +157,7 @@ export default function Hero() {
             >
               Get In Touch
             </a>
-          </motion.div>
+          </motion.div>*/}
         </div>
       </div>
     </section>

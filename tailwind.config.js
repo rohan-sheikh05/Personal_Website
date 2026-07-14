@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         // You can name this whatever you want
         'future': ['Orbitron', 'sans-serif'], 
+        'code': ['Fira Code', 'monospace'],
       },
 
     },
