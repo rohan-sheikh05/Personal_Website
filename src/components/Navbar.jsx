@@ -20,10 +20,10 @@ import CVButton from "./CVButton";
 
 const LINKS = [
   { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
+  /*{ href: "#skills", label: "Skills" },*/
   { href: "#achievements", label: "Achievements" },
   { href: "#certificates", label: "Certificates" },
-  { href: "#club", label: "Club Affiliations" },
+  /*{ href: "#club", label: "Club Affiliations" },*/
   { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
 ];
@@ -45,42 +45,48 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-black/40 backdrop-blur-lg px-4 py-3 rounded-2xl shadow-lg flex items-center justify-between w-[90%] md:w-3/4 z-50">
-      <a href="/" className="text-xl font-bold text-white hover:text-teal-400 transition-colors">
+      <a href="/" className="text-xl font-bold text-white hover:text-teal-400 transition-colors whitespace-nowrap">
         Rohan Sheikh
       </a>
 
-      {/* Desktop links */}
-      <div
-        className="hidden md:flex items-center gap-1 font-semibold text-sm lg:text-base relative"
-        onMouseLeave={handleRowLeave}
-      >
-        <motion.span
-          className="absolute top-0 h-full rounded-full bg-white/10 backdrop-blur-md border border-white/15 shadow-[inset_0_1px_1px_rgba(255,255,255,0.25)] pointer-events-none"
-          animate={{ left: pill.left, width: pill.width, opacity: pill.opacity }}
-          transition={{ type: "spring", stiffness: 260, damping: 28, mass: 0.6 }}
-        />
-        {LINKS.map((link, i) => (
-          <a
-            key={link.href}
-            ref={(el) => (linkRefs.current[i] = el)}
-            href={link.href}
-            onMouseEnter={() => handleHover(i)}
-            className="relative z-10 px-3 py-2 rounded-full text-gray-200 hover:text-white transition-colors"
-          >
-            {link.label}
-          </a>
-        ))}
-        <CVButton variant="nav" />
-      </div>
+      <div className="flex items-center justify-end gap-6 flex-shrink-0 w-auto">
+        {/* Desktop links */}
+        <div
+          className="hidden lg:flex items-center gap-0.7 font-semibold text-sm lg:text-base relative"
+          onMouseLeave={handleRowLeave}
+        >
+          <motion.span
+            className="absolute top-0 h-full rounded-full bg-white/10 backdrop-blur-md border border-white/15 shadow-[inset_0_1px_1px_rgba(255,255,255,0.25)] pointer-events-none"
+            animate={{ left: pill.left, width: pill.width, opacity: pill.opacity }}
+            transition={{ type: "spring", stiffness: 280, damping: 23, mass: 0.6 }}
+          />
+          {LINKS.map((link, i) => (
+            <a
+              key={link.href}
+              ref={(el) => (linkRefs.current[i] = el)}
+              href={link.href}
+              onMouseEnter={() => handleHover(i)}
+              className="relative z-10 px-3 py-2 rounded-full text-gray-200 hover:text-white transition-colors whitespace-nowrap"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
 
-      {/* Mobile toggle */}
-      <button
-        className="md:hidden text-white p-2 rounded-md hover:bg-white/5 transition"
-        onClick={() => setIsOpen(!isOpen)}
-        aria-label="Toggle menu"
-      >
-        {isOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
-      </button>
+        {/* CV button - always visible on every screen size, not tucked into the hamburger menu */}
+        <div className="flex items-center gap-2 flex-shrink-0">
+          <CVButton variant="nav" />
+
+          {/* Mobile toggle */}
+          <button
+            className="lg:hidden text-white p-2 rounded-md hover:bg-white/5 transition"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
+          </button>
+        </div>
+      </div>
 
       {/* Mobile menu */}
       <AnimatePresence>
@@ -91,7 +97,7 @@ export default function Navbar() {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: "100%", opacity: 0 }}
             transition={{ type: "spring", stiffness: 500, damping: 60 }}
-            className="absolute top-16 right-4 w-[85%] max-w-xs bg-black/95 text-white rounded-xl shadow-2xl p-6 md:hidden"
+            className="absolute top-16 right-4 w-[85%] max-w-xs bg-black/95 text-white rounded-xl shadow-2xl p-6 lg:hidden"
           >
             <nav className="flex flex-col gap-4 text-lg">
               {LINKS.map((link) => (
@@ -104,7 +110,6 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <CVButton variant="mobile" onClick={() => setIsOpen(false)} />
             </nav>
           </motion.div>
         )}

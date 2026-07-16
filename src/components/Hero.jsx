@@ -106,7 +106,7 @@ export default function Hero() {
 
         {/* Text content */}
         <div className="order-2 md:order-1 md:col-span-3 flex flex-col items-center md:items-start text-center md:text-left">
-          <motion.p {...fadeUp(0)} className="text-gray-500 text-4xl font-bold tracking-wide mb-2">
+          <motion.p {...fadeUp(0)} className="text-gray-500 text-5xl font-bold tracking-wide mb-2">
             Hi,
           </motion.p>
 
