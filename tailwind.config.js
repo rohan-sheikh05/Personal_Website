@@ -10,6 +10,7 @@ module.exports = {
         // You can name this whatever you want
         'future': ['Orbitron', 'sans-serif'], 
         'code': ['Fira Code', 'monospace'],
+        'pixel': ['"Pixelify Sans"', 'sans-serif'],
       },
 
     },
