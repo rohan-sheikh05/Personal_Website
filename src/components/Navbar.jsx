@@ -1,18 +1,4 @@
 // src/components/Navbar.jsx
-//
-// The hover highlight is now ONE persistent element whose position/width
-// is measured and animated via spring physics, instead of a new element
-// being mounted per-link (the old layoutId approach) - that's what was
-// causing the occasional "mirrored/jumped" glitch under fast mouse
-// movement, since two overlapping shared-layout animations could race.
-// A single continuously-animated element can't do that.
-//
-// Styled as a frosted "liquid glass" pill (translucent + blur + soft inner
-// highlight) rather than a flat color fill.
-//
-// Name is a real <a href="/"> so clicking it does a traditional full
-// navigation back to the homepage.
-
 import React, { useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -44,15 +30,14 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-black/40 backdrop-blur-lg px-4 py-3 rounded-2xl shadow-lg flex items-center justify-between w-[90%] md:w-3/4 z-50">
+    <nav className="fixed top-4 inset-x-0 mx-auto w-[90%] md:w-3/4 bg-black/40 backdrop-blur-lg px-4 py-3 rounded-2xl shadow-lg flex items-center justify-between z-50">
       <a href="/" className="text-xl font-bold text-white hover:text-teal-400 transition-colors whitespace-nowrap">
         Rohan Sheikh
       </a>
 
       <div className="flex items-center justify-end gap-6 flex-shrink-0 w-auto">
-        {/* Desktop links */}
         <div
-          className="hidden lg:flex items-center gap-0.7 font-semibold text-sm lg:text-base relative"
+          className="hidden lg:flex items-center gap-1 font-semibold text-sm lg:text-base relative"
           onMouseLeave={handleRowLeave}
         >
           <motion.span
@@ -73,11 +58,8 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* CV button - always visible on every screen size, not tucked into the hamburger menu */}
         <div className="flex items-center gap-2 flex-shrink-0">
           <CVButton variant="nav" />
-
-          {/* Mobile toggle */}
           <button
             className="lg:hidden text-white p-2 rounded-md hover:bg-white/5 transition"
             onClick={() => setIsOpen(!isOpen)}
@@ -88,7 +70,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

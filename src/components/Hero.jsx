@@ -44,7 +44,7 @@ function HeroPhoto() {
         onMouseMove={handleMouseMove}
         onMouseEnter={() => setHovering(true)}
         onMouseLeave={handleMouseLeave}
-        className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-full md:h-auto md:aspect-square md:max-w-sm cursor-default"
+        className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-full md:h-auto md:aspect-square md:max-w-sm cursor-default overflow-hidden"
         style={{ perspective: 800 }}
       >
         <div
@@ -80,7 +80,7 @@ function HeroPhoto() {
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center px-6 pt-28 pb-16 relative">
+    <section className="min-h-screen flex items-center px-6 pt-28 pb-16 relative overflow-hidden">
       <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
         {/* Photo + social, grouped as one column so they stay attached together */}
         <div className="order-1 md:order-2 md:col-span-2 flex flex-col items-center gap-6">
