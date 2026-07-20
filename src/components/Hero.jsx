@@ -44,7 +44,7 @@ function HeroPhoto() {
         onMouseMove={handleMouseMove}
         onMouseEnter={() => setHovering(true)}
         onMouseLeave={handleMouseLeave}
-        className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-full md:h-auto md:aspect-square md:max-w-sm cursor-default overflow-hidden"
+        className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-full md:h-auto md:aspect-square md:max-w-sm cursor-default"
         style={{ perspective: 800 }}
       >
         <div
